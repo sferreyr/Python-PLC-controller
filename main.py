@@ -35,7 +35,7 @@ def Conexion():
     # https://www.rapidtables.com/convert/number/decimal-to-hex.html
     if connection:
         print("CONECTADO")
-        requestSepam = (client.read_holding_registers(0x0, 86, unit=0x1)) #Reemplazar en Hex la direccion del registro
+        requestSepam = (client.read_holding_registers(0x0, 97, unit=0x1)) #Reemplazar en Hex la direccion del registro
         dat = np.array(requestSepam.registers)
 
         BancoCapacitores = "Banco Capacitores"
